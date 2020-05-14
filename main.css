@@ -29,24 +29,27 @@ body {
 
 .main-header {
   background: #445162;
-  padding: 50px;
+  padding: 50px 50px 44px;
 }
 
 .product-name {
-  margin-bottom: 40px;
-  line-height: 0.9;
+  margin-bottom: 33px;
+  margin-top: -14px;
+  margin-left: -4px;
+  line-height: 1.2;
   font-size: 60px;
   font-weight: 400;
   color: #ffffff;
 }
 
-.product-description-rules {
+.about {
   font-size: 20px;
-  line-height: 32.5px;
+  line-height: 36px;
   font-weight: 400;
   color: #ffffff;
   list-style-image: url('img/check_icon_346.png');
   list-style-position: inside;
+  margin-top: -6px;
 }
 
 .main-img {
@@ -69,18 +72,20 @@ body {
   line-height: 36px;
   font-weight: 400;
   color: #445161;
+  margin-top: -8px;
+  margin-left: 1px;
 }
 
 .product-description-para {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: 400;
   color: #333333;
 }
 
 .product-description-para-margin {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 23px;
+  margin-bottom: 11px;
 }
 
 .product-img {
@@ -95,11 +100,13 @@ body {
 }
 
 .pluses-h2 {
-  margin-bottom: 29px;
+  margin-top: -8px;
+  width: 1178px;
+  margin-bottom: 28px;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 36px;
   color: #445161;
 }
 
@@ -107,23 +114,24 @@ body {
 .pluses-right-items {
   width: 568px;
   height: 260px;
+  margin-right: -1px;
 }
 
 .pluses-para {
   width: 527px;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: 400;
   color: #333333;
+  margin-top: -6px;
 }
 
 .pluses-item-margin {
-  margin: 35px 0;
+  margin: 32px 0 33px;
 }
 
 .white-plus {
   margin-right: 9px;
-  display: inline-block;
   width: 32px;
   height: 32px;
   background-image: url('img/grey_background.png'), url('img/white_plus.png');
