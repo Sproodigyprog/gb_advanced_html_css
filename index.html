@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Simple layout</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/changeOpacity.js"></script>
   </head>
   <body>
+
+    <div class="perfect-pixel">
+      <img id="perfect-pixel-img" src="img/simple_psd.jpg" alt="perfect-pixel-img">
+    </div>
+
+    <div class="change-opacity">
+      <label for="perfect-pixel-img-opacity">Opacity</label>
+      <input id="perfect-pixel-img-opacity" type="number" min="0" max="1" step=".1" value="0.5" onchange="changeOpacity()">
+    </div>
+
     <div class="container">
-      <header class="main-header">
-        <section class="clearfix">
-          <article class="float-left">
-            <h1 class="product-name">Product name</h1>
-            <ul class="about">
-              <li>Put on&nbsp;this page information about your product</li>
-              <li>A&nbsp;detailed description of&nbsp;your product</li>
-              <li>Tell us&nbsp;about the advantages and merits</li>
-              <li>Associate the page with the payment system</li>
-            </ul>
-          </article>
-          <div class="main-img float-right">img</div>
-        </section>
+
+      <header class="main-header padding-site clearfix">
+        <div class="main-header-wrp float-left">
+          <h1 class="main-header-product-name">Product name</h1>
+          <ul class="main-header-list">
+            <li>Put on&nbsp;this page information about your product</li>
+            <li>A&nbsp;detailed description of&nbsp;your product</li>
+            <li>Tell us&nbsp;about the advantages and merits</li>
+            <li>Associate the page with the payment system</li>
+          </ul>
+        </div>
+        <img src="" class="main-header-img float-right" width="469" height="214" alt="main-header-img">
       </header>
 
       <main>
+
         <section class="product-description clearfix">
-          <article class="short-description float-left">
-            <h2 class="product-description-h2">About your product</h2>
-            <p class="product-description-para product-description-para-margin">
+          <div class="short-description float-left">
+            <h2 class="product-description-title">About your product</h2>
+            <p class="product-description-para">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
               magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.
@@ -36,75 +48,173 @@
               ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores.
               Sequi itaque, unde perferendis nemo debitis dolor.
             </p>
-          </article>
-          <div class="product-img float-right"></div>
+          </div>
+          <img src="" class="product-img float-right" width="430" height="245" alt="product-img">
         </section>
 
-        <section class="pluses clearfix">
-          <h2 class="pluses-h2">Dignity and pluses product</h2>
-
-          <div class="pluses-left-items float-left">
-            <div class="pluses-item clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+        <section class="pluses">
+          <h2 class="pluses-title">Dignity and pluses product</h2>
+          <div class="pluses-item-wrp">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
+            </details>
 
-            <div class="pluses-item pluses-item-margin clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
+            </details>
 
-            <div class="pluses-item clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
-
+            </details>
           </div>
 
-          <div class="pluses-right-items float-right">
-            <div class="pluses-item clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+          <div class="pluses-item-wrp">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
+            </details>
 
-            <div class="pluses-item pluses-item-margin clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
+            </details>
 
-            <div class="pluses-item clearfix">
-              <span class="white-plus float-left"></span>
-              <p class="pluses-para float-left">
+            <details class="pluses-item" open>
+              <summary></summary>
+              <p>
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
-            </div>
+            </details>
           </div>
         </section>
+
         <section class="screenshots">
+          <h2 class="screenshots-title">Screenshots</h2>
+          <div class="screenshots-items-wrap">
+            <figure class="screenshots-figure">
+              <img src="" alt="screenshot1" width="200" height="150">
+              <figcaption class="screenshots-figure-figcaption">
+                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
+                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+                  ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat
+                  quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="screenshots-figure">
+              <img src="" alt="screenshot2" width="200" height="150">
+              <figcaption class="screenshots-figure-figcaption">
+                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
+                  Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
+                  magni, expli&shy;cabo veniam incidunt in quam sapiente ut ipsum.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
 
+          <div class="screenshots-items-wrap">
+            <figure class="screenshots-figure">
+              <img src="" alt="screenshot3" width="200" height="150">
+              <figcaption class="screenshots-figure-figcaption">
+                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
+                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+                  ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat
+                  quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="screenshots-figure">
+              <img src="" alt="screenshot4" width="200" height="150">
+              <figcaption class="screenshots-figure-figcaption">
+                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
+                  Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
+                  magni, expli&shy;cabo veniam incidunt in quam sapiente ut ipsum.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
         </section>
+
+        <section class="reviews">
+          <h2 class="reviews-title">Reviews</h2>
+          <div class="reviews-wrp">
+            <figure class="reviews-figure">
+              <img src="img/review_img.png" alt="review1" width="75" height="75">
+              <figcaption class="reviews-figcaption">
+                <div class="reviews-figcaption-arrow"></div>
+                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                </p>
+                <p>Lourens S.</p>
+              </figcaption>
+            </figure>
+            <figure class="reviews-figure">
+              <img src="img/review_img.png" alt="review2" width="75" height="75">
+              <figcaption class="reviews-figcaption">
+                <div class="reviews-figcaption-arrow"></div>
+                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                </p>
+                <p>Lourens S.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="reviews-wrp">
+            <figure class="reviews-figure">
+              <img src="img/review_img.png" alt="review3" width="75" height="75">
+              <figcaption class="reviews-figcaption">
+                <div class="reviews-figcaption-arrow"></div>
+                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                </p>
+                <p>Lourens S.</p>
+              </figcaption>
+            </figure>
+            <figure class="reviews-figure">
+              <img src="img/review_img.png" alt="review4" width="75" height="75">
+              <figcaption class="reviews-figcaption">
+                <div class="reviews-figcaption-arrow"></div>
+                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                </p>
+                <p>Lourens S.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
       </main>
     </div>
   </body>
