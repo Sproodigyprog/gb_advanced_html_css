@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -8,20 +8,9 @@
     <script src="js/changeOpacity.js"></script>
   </head>
   <body>
-
-    <div class="perfect-pixel">
-      <img id="perfect-pixel-img" src="img/simple_psd.jpg" alt="perfect-pixel-img">
-    </div>
-
-    <div class="change-opacity">
-      <label for="perfect-pixel-img-opacity">Opacity</label>
-      <input id="perfect-pixel-img-opacity" type="number" min="0" max="1" step=".1" value="0.5" onchange="changeOpacity()">
-    </div>
-
     <div class="container">
-
-      <header class="main-header padding-site clearfix">
-        <div class="main-header-wrp float-left">
+      <header class="main-header">
+        <div class="main-header-wrp">
           <h1 class="main-header-product-name">Product name</h1>
           <ul class="main-header-list">
             <li>Put on&nbsp;this page information about your product</li>
@@ -30,13 +19,11 @@
             <li>Associate the page with the payment system</li>
           </ul>
         </div>
-        <img src="" class="main-header-img float-right" width="469" height="214" alt="main-header-img">
+        <img class="main-header-img" width="469" height="214" alt="main-header-img"></img>
       </header>
-
       <main>
-
-        <section class="product-description clearfix">
-          <div class="short-description float-left">
+        <section class="product-description">
+          <div class="product-description-wrp">
             <h2 class="product-description-title">About your product</h2>
             <p class="product-description-para">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -49,62 +36,56 @@
               Sequi itaque, unde perferendis nemo debitis dolor.
             </p>
           </div>
-          <img src="" class="product-img float-right" width="430" height="245" alt="product-img">
+          <video class="product-description-video" width="430" height="245"></video>
         </section>
-
         <section class="pluses">
           <h2 class="pluses-title">Dignity and pluses product</h2>
-          <div class="pluses-item-wrp">
+          <div class="pluses-wrp">
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
             </details>
-
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
             </details>
-
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
             </details>
           </div>
-
-          <div class="pluses-item-wrp">
+          <div class="pluses-wrp">
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
             </details>
-
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
               </p>
             </details>
-
             <details class="pluses-item" open>
               <summary></summary>
-              <p>
+              <p class="pluses-item-para">
                 Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
                 impedit iure placeat, ullam. Reprehenderit aliquam,
                 nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
@@ -112,109 +93,140 @@
             </details>
           </div>
         </section>
-
         <section class="screenshots">
           <h2 class="screenshots-title">Screenshots</h2>
-          <div class="screenshots-items-wrap">
             <figure class="screenshots-figure">
-              <img src="" alt="screenshot1" width="200" height="150">
+              <img class="screenshots-figure-img" alt="screenshot1" width="200" height="150">
               <figcaption class="screenshots-figure-figcaption">
                 <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
-                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+                <p class="screenshots-figure-figcaption-para">
+                  Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
                   ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat
                   quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
                 </p>
               </figcaption>
-            </figure>
-            <figure class="screenshots-figure">
-              <img src="" alt="screenshot2" width="200" height="150">
-              <figcaption class="screenshots-figure-figcaption">
-                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
-                  Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
-                  magni, expli&shy;cabo veniam incidunt in quam sapiente ut ipsum.
-                </p>
-              </figcaption>
-            </figure>
-          </div>
 
-          <div class="screenshots-items-wrap">
+            </figure>
             <figure class="screenshots-figure">
-              <img src="" alt="screenshot3" width="200" height="150">
+              <img class="screenshots-figure-img" alt="screenshot2" width="200" height="150">
               <figcaption class="screenshots-figure-figcaption">
                 <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
-                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+                <p class="screenshots-figure-figcaption-para">
+                  Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
                   ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat
                   quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
                 </p>
               </figcaption>
             </figure>
             <figure class="screenshots-figure">
-              <img src="" alt="screenshot4" width="200" height="150">
+              <img class="screenshots-figure-img" alt="screenshot3" width="200" height="150">
               <figcaption class="screenshots-figure-figcaption">
                 <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
+                <p class="screenshots-figure-figcaption-para">
+                  Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
                   Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
                   magni, expli&shy;cabo veniam incidunt in quam sapiente ut ipsum.
                 </p>
               </figcaption>
             </figure>
-          </div>
+
+            <figure class="screenshots-figure">
+              <img class="screenshots-figure-img" alt="screenshot4" width="200" height="150">
+              <figcaption class="screenshots-figure-figcaption">
+                <h3 class="screenshots-figure-figcaption-title">The description for the image</h3>
+                <p class="screenshots-figure-figcaption-para">Lorem ipsum dolor sit amet, consectetur adipisic&shy;ing elit.
+                  Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
+                  magni, expli&shy;cabo veniam incidunt in quam sapiente ut ipsum.
+                </p>
+              </figcaption>
+            </figure>
         </section>
-
         <section class="reviews">
           <h2 class="reviews-title">Reviews</h2>
-          <div class="reviews-wrp">
-            <figure class="reviews-figure">
+            <div class="reviews-figure">
               <img src="img/review_img.png" alt="review1" width="75" height="75">
-              <figcaption class="reviews-figcaption">
-                <div class="reviews-figcaption-arrow"></div>
-                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
-                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
-                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                </p>
-                <p>Lourens S.</p>
-              </figcaption>
-            </figure>
-            <figure class="reviews-figure">
+              <p class="reviews-figure-para">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                <span class="reviews-figure-para-sign">Lourens S.</span>
+              </p>
+            </div>
+            <div class="reviews-figure">
               <img src="img/review_img.png" alt="review2" width="75" height="75">
-              <figcaption class="reviews-figcaption">
-                <div class="reviews-figcaption-arrow"></div>
-                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
-                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
-                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                </p>
-                <p>Lourens S.</p>
-              </figcaption>
-            </figure>
+              <p class="reviews-figure-para">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                <span class="reviews-figure-para-sign">Lourens S.</span>
+              </p>
+            </div>
+
+            <div class="reviews-figure">
+              <img src="img/review_img.png" alt="review3" width="75" height="75">
+              <p class="reviews-figure-para">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                <span class="reviews-figure-para-sign">Lourens S.</span>
+              </p>
+            </div>
+            <div class="reviews-figure">
+              <img src="img/review_img.png" alt="review4" width="75" height="75">
+              <p class="reviews-figure-para">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
+                Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                <span class="reviews-figure-para-sign">Lourens S.</span>
+              </p>
+            </div>
+        </section>
+        <section class="buy">
+          <h2 class="buy-title">Buy it now</h2>
+          <div class="buy-price">
+            <span class="buy-price-title">Standart</span>
+            <span class="buy-price-cost">$100</span>
+            <ol class="buy-price-list">
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+            </ol>
+            <button href="#" class="buy-price-btn">Buy</button>
           </div>
 
-          <div class="reviews-wrp">
-            <figure class="reviews-figure">
-              <img src="img/review_img.png" alt="review3" width="75" height="75">
-              <figcaption class="reviews-figcaption">
-                <div class="reviews-figcaption-arrow"></div>
-                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
-                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
-                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                </p>
-                <p>Lourens S.</p>
-              </figcaption>
-            </figure>
-            <figure class="reviews-figure">
-              <img src="img/review_img.png" alt="review4" width="75" height="75">
-              <figcaption class="reviews-figcaption">
-                <div class="reviews-figcaption-arrow"></div>
-                <p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
-                  iste quia doloribus autem aperiam nulla ea neque reprehen&shy;derit.
-                  Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                </p>
-                <p>Lourens S.</p>
-              </figcaption>
-            </figure>
+          <div class="buy-price">
+            <span class="buy-price-title">Premium</span>
+            <span class="buy-price-cost">$150</span>
+            <ol class="buy-price-list">
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+            </ol>
+            <button href="#" class="buy-price-btn">Buy</button>
+          </div>
+
+          <div class="buy-price">
+            <span class="buy-price-title">Lux</span>
+            <span class="buy-price-cost">$200</span>
+            <ol class="buy-price-list">
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+              <li>Porro officia cumque sint deleniti;</li>
+              <li>Тemo facere rem vitae odit;</li>
+              <li>Cum odio, iste quia doloribus autem;</li>
+              <li>Aperiam nulla ea neque.</li>
+            </ol>
+            <button href="#" class="buy-price-btn">Buy</button>
           </div>
         </section>
-
       </main>
     </div>
   </body>
