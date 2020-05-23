@@ -2,13 +2,15 @@
 
 // Parametric mixins
 
-.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0, @padding: 0 0 0 29px) {
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
   background-position: @x @y;
   width: @width;
   height: @height;
-  padding: @padding;
+  margin: 0 0 18px 0;
+  padding:  0 0 0 29px;
+  color: @secondary-color;
   .flex-box(space-between, flex-end);
-  .para-main-font
+  .para-main-font;
 }
 
 // Main footer styles
@@ -19,10 +21,11 @@
   .flex-box();
 
   &-title {
-    .title-h2-font();
-    .full-width();
+    display: block;
     margin: 0 0 29px 0;
     color: @secondary-color;
+    .title-h2-font();
+    .full-width();
   }
 
   &-form {
@@ -49,14 +52,15 @@
 
     &-text:hover,
     &-email:hover,
-    &-message:hover {
+    &-message:hover,
+    &-submit-button:hover,
+    &-text:focus,
+    &-email:focus,
+    &-message:focus,
+    &-submit-button:focus {
       background: (@main-color)+#333;
       color: @secondary-color;
-    }
-
-    &-submit-button:hover {
-      background: (@main-color)+#333;
-      color: @secondary-color;
+      border-radius: 0;
       outline: 1px solid @secondary-color;
     }
 
@@ -88,7 +92,7 @@
     width: 240px;
   }
 
-  &-contacts-list {
+  &-list {
     list-style-type: none;
     color: @secondary-color;
     margin: 0 0 34px 0;
@@ -105,6 +109,7 @@
 
   &-social {
     width: 240px;
+    margin: 32px 0 0 0;
     .flex-box();
 
     &-item {
@@ -130,7 +135,6 @@
     }
   }
 
-
   .sprite {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
@@ -151,5 +155,20 @@
     &.sprite-skype_icon {
         .stitches-sprite(-19px, -204px, 24px, 26px);
     }
+  }
+}
+
+.rights {
+  background: @gray-lighten;
+
+  &-para {
+    margin: 0;
+    padding: 4px 0 0 0;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: @main-color;
   }
 }
