@@ -1,0 +1,34 @@
+// main: style.less
+
+.product-description {
+  padding: @main-padding;
+  background-color: @secondary-color;
+  .flex-box();
+  .full-width();
+  .border-box();
+
+  &-wrp {
+    width: 653px;
+  }
+
+  &-title {
+    .title-h2-font(left);
+    color: @main-color;
+    margin: 0 0 30px 0;
+  }
+
+  &-para {
+    .para-main-font();
+    color: @black-lighten;
+    margin: 0 0 20px 0;;
+  }
+
+  &-para:last-child {
+    margin: 0;
+  }
+
+  &-video {
+    background-color: @main-color;
+    display: block;
+  }
+}

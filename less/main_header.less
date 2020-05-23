@@ -1,0 +1,49 @@
+// main: style.less
+
+.main-header {
+  background: @main-color;
+  padding: @main-padding;
+  .border-box();
+  .flex-box();
+  .full-width();
+
+  &-product-name {
+    margin: 0 0 50px 0;
+    line-height: 44px;
+    font-size: 60px;
+    font-weight: 400;
+    color: @secondary-color;
+  }
+
+  &-list {
+    padding: 0 0px 0 31px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &-list li {
+    position: relative;
+    padding: 0 0 0 10px;
+  }
+
+  &-list li:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    background-image: url('../img/check_icon_346.png');
+    background-size: cover;
+  }
+
+  &-img {
+    background-color: @secondary-color;
+    display: block;
+  }
+}

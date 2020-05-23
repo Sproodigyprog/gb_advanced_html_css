@@ -1,0 +1,155 @@
+// main: style.less
+
+// Parametric mixins
+
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0, @padding: 0 0 0 29px) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+  padding: @padding;
+  .flex-box(space-between, flex-end);
+  .para-main-font
+}
+
+// Main footer styles
+
+.contacts {
+  background: @main-color;
+  padding: 50px 247px;
+  .flex-box();
+
+  &-title {
+    .title-h2-font();
+    .full-width();
+    margin: 0 0 29px 0;
+    color: @secondary-color;
+  }
+
+  &-form {
+    width: 500px;
+    min-height: 354px;
+    .flex-box(center, center);
+
+    &-text,
+    &-email,
+    &-message,
+    &-submit-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      margin: 0 0 21px 0;
+      color: @main-color;
+      text-transform: capitalize;
+      .para-main-font();
+      .border-box();
+    }
+
+    &-text:hover,
+    &-email:hover,
+    &-message:hover {
+      background: (@main-color)+#333;
+      color: @secondary-color;
+    }
+
+    &-submit-button:hover {
+      background: (@main-color)+#333;
+      color: @secondary-color;
+      outline: 1px solid @secondary-color;
+    }
+
+    &-submit-button:active {
+      background: @secondary-color;
+      color: @main-color;
+      outline: 1px solid @main-color;
+    }
+
+    &-email {
+      text-transform: none;
+    }
+
+    &-message {
+      height: 170px;
+      resize: none;
+      text-transform: none;
+    }
+
+    &-submit-button {
+      margin: 0 auto;
+      padding: 10px;
+      width: 140px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-wrp {
+    width: 240px;
+  }
+
+  &-contacts-list {
+    list-style-type: none;
+    color: @secondary-color;
+    margin: 0 0 34px 0;
+    padding: 0;
+
+    &-item {
+      margin: 0 0 19px 0;
+    }
+
+    &-item:last-child {
+      margin: 0;
+    }
+  }
+
+  &-social {
+    width: 240px;
+    .flex-box();
+
+    &-item {
+      height: 42px;
+      width: 42px;
+      line-height: 42px;
+      border-radius: 50%;
+      color: @main-color;
+      background: @secondary-color;
+      .flex-box(center, center);
+    }
+
+    &-item:hover {
+      background: @main-color;
+      color: @secondary-color;
+      outline: 1px solid @secondary-color;
+    }
+
+    &-item:active {
+      background: @secondary-color;
+      color: @main-color;
+      outline: 1px solid @main-color;
+    }
+  }
+
+
+  .sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-email_icon {
+        .stitches-sprite(-19px, -19px, 22px, 22px);
+    }
+
+    &.sprite-icq_icon {
+        .stitches-sprite(-19px, -79px, 26px, 26px);
+    }
+
+    &.sprite-phone_icon {
+        .stitches-sprite(-19px, -143px, 24px, 23px);
+    }
+
+    &.sprite-skype_icon {
+        .stitches-sprite(-19px, -204px, 24px, 26px);
+    }
+  }
+}

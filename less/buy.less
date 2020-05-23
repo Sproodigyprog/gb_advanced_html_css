@@ -1,0 +1,76 @@
+// main: style.less
+
+.buy {
+  padding: 50px 145px;
+  .flex-box(space-between, flex-end);
+
+  &-title {
+    .title-h2-font();
+    .full-width();
+    margin: 0 0 30px 0;
+    color: @main-color;
+  }
+
+  &-price {
+    width: 300px;
+    padding: 0 0 20px 0;
+    background: @main-color;
+    color: @secondary-color;
+    border: 2px solid @main-color;
+    border-radius: 5px;
+
+    &-title {
+      display: block;
+      padding: 11px;
+      color: @secondary-color;
+      .title-h3-font();
+    }
+
+    &-cost {
+      display: block;
+      padding: 21px;
+      font-size: 40px;
+      line-height: 30px;
+      font-weight: 400;
+      text-align: center;
+      background: @secondary-color;
+      color: @main-color;
+    }
+
+    &-list {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      padding: 20px;
+      margin: 0;
+      list-style-position: inside;
+    }
+
+    &-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 11px;
+      width: 260px;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 700;
+      color: @main-color;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    &-btn:hover {
+      background: @main-color;
+      color: @secondary-color;
+      outline: 1px solid @secondary-color;
+    }
+
+    &-btn:active {
+      background: @secondary-color;
+      color: @main-color;
+      outline: 1px solid @main-color;
+    }
+  }
+}
