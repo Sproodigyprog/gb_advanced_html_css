@@ -18,6 +18,8 @@
 .contacts {
   background: @main-color;
   padding: 50px 247px;
+  .border-box();
+  .full-width();
   .flex-box();
 
   &-title {
@@ -53,11 +55,7 @@
     &-text:hover,
     &-email:hover,
     &-message:hover,
-    &-submit-button:hover,
-    &-text:focus,
-    &-email:focus,
-    &-message:focus,
-    &-submit-button:focus {
+    &-submit-button:hover {
       background: (@main-color)+#333;
       color: @secondary-color;
       border-radius: 0;
@@ -67,7 +65,8 @@
     &-submit-button:active {
       background: @secondary-color;
       color: @main-color;
-      outline: 1px solid @main-color;
+      border-radius: 5px;
+      outline: none;
     }
 
     &-email {

@@ -28,11 +28,11 @@ body {
   background: #445161;
   padding: 50px;
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: initial;
-  width: 100%;
 }
 .main-header-product-name {
   margin: 0 0 50px 0;
@@ -112,6 +112,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: initial;
+  box-sizing: border-box;
+  width: 100%;
   /* Chrome and Opera */
   /* Firefox */
 }
@@ -186,6 +188,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: initial;
+  box-sizing: border-box;
+  width: 100%;
 }
 .screenshots-title {
   font-size: 30px;
@@ -239,6 +243,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: initial;
+  box-sizing: border-box;
+  width: 100%;
 }
 .reviews-title {
   font-size: 30px;
@@ -299,6 +305,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  box-sizing: border-box;
+  width: 100%;
 }
 .buy-title {
   font-size: 30px;
@@ -373,6 +381,8 @@ body {
 .contacts {
   background: #445161;
   padding: 50px 247px;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -418,11 +428,7 @@ body {
 .contacts-form-text:hover,
 .contacts-form-email:hover,
 .contacts-form-message:hover,
-.contacts-form-submit-button:hover,
-.contacts-form-text:focus,
-.contacts-form-email:focus,
-.contacts-form-message:focus,
-.contacts-form-submit-button:focus {
+.contacts-form-submit-button:hover {
   background: #778494;
   color: #fff;
   border-radius: 0;
@@ -431,7 +437,8 @@ body {
 .contacts-form-submit-button:active {
   background: #fff;
   color: #445161;
-  outline: 1px solid #445161;
+  border-radius: 5px;
+  outline: none;
 }
 .contacts-form-email {
   text-transform: none;
