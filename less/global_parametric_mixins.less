@@ -1,0 +1,24 @@
+// main: style.less
+
+.flex-box(@justify: space-between, @align: initial) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.title-h2-font(@align-text: center, @text-transform: capitalize) {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 400;
+  text-align: @align-text;
+  text-transform: @text-transform;
+}
+
+.title-h3-font(@align-text: center, @text-transform: capitalize) {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: @align-text;
+  text-transform: @text-transform;
+}

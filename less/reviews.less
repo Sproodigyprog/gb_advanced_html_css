@@ -1,0 +1,61 @@
+// main: style.less
+
+.reviews {
+  padding: @main-padding;
+  background: @gray-lighten;
+  .flex-box();
+  .border-box();
+  .full-width();
+
+  &-title {
+    .title-h2-font();
+    .full-width();
+    margin: 0 0 30px 0;
+    color: @main-color;
+  }
+
+  &-figure:nth-child(4),
+  &-figure:nth-child(5) {
+    margin: 0;
+  }
+
+  &-figure {
+    width: 49%;
+    margin: 0 0 24px 0;
+    .flex-box();
+
+    &-para {
+      width: 435px;
+      padding: 14px 20px;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      font-style: italic;
+      border-radius: 5px;
+      background: @gray;
+      color: @black-lighten;
+      margin: 0;
+      position: relative;
+    }
+
+    &-para:before {
+      content: "";
+      display: inline-block;
+      border: 12px solid transparent;
+      border-right: 12px solid @gray;
+      position: absolute;
+      top: 25px;
+      left: -22px;
+    }
+
+    &-para-sign {
+      margin: 8px 0 0 0;
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      font-style: normal;
+      color: @gray-darken;
+    }
+  }
+}

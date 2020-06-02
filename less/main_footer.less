@@ -1,0 +1,173 @@
+// main: style.less
+
+// Parametric mixins
+
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+  margin: 0 0 18px 0;
+  padding:  0 0 0 29px;
+  color: @secondary-color;
+  .flex-box(space-between, flex-end);
+  .para-main-font;
+}
+
+// Main footer styles
+
+.contacts {
+  background: @main-color;
+  padding: 50px 247px;
+  .border-box();
+  .full-width();
+  .flex-box();
+
+  &-title {
+    display: block;
+    margin: 0 0 29px 0;
+    color: @secondary-color;
+    .title-h2-font();
+    .full-width();
+  }
+
+  &-form {
+    width: 500px;
+    min-height: 354px;
+    .flex-box(center, center);
+
+    &-text,
+    &-email,
+    &-message,
+    &-submit-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      margin: 0 0 21px 0;
+      color: @main-color;
+      text-transform: capitalize;
+      .para-main-font();
+      .border-box();
+    }
+
+    &-text:hover,
+    &-email:hover,
+    &-message:hover,
+    &-submit-button:hover {
+      background: (@main-color)+#333;
+      color: @secondary-color;
+      border-radius: 0;
+      outline: 1px solid @secondary-color;
+    }
+
+    &-submit-button:active {
+      background: @secondary-color;
+      color: @main-color;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    &-email {
+      text-transform: none;
+    }
+
+    &-message {
+      height: 170px;
+      resize: none;
+      text-transform: none;
+    }
+
+    &-submit-button {
+      margin: 0 auto;
+      padding: 10px;
+      width: 140px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-wrp {
+    width: 240px;
+  }
+
+  &-list {
+    list-style-type: none;
+    color: @secondary-color;
+    margin: 0 0 34px 0;
+    padding: 0;
+
+    &-item {
+      margin: 0 0 19px 0;
+    }
+
+    &-item:last-child {
+      margin: 0;
+    }
+  }
+
+  &-social {
+    width: 240px;
+    margin: 32px 0 0 0;
+    .flex-box();
+
+    &-item {
+      height: 42px;
+      width: 42px;
+      line-height: 42px;
+      border-radius: 50%;
+      color: @main-color;
+      background: @secondary-color;
+      .flex-box(center, center);
+    }
+
+    &-item:hover {
+      background: @main-color;
+      color: @secondary-color;
+      outline: 1px solid @secondary-color;
+    }
+
+    &-item:active {
+      background: @secondary-color;
+      color: @main-color;
+      outline: 1px solid @main-color;
+    }
+  }
+
+  .sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-email_icon {
+        .stitches-sprite(-19px, -19px, 22px, 22px);
+    }
+
+    &.sprite-icq_icon {
+        .stitches-sprite(-19px, -79px, 26px, 26px);
+    }
+
+    &.sprite-phone_icon {
+        .stitches-sprite(-19px, -143px, 24px, 23px);
+    }
+
+    &.sprite-skype_icon {
+        .stitches-sprite(-19px, -204px, 24px, 26px);
+    }
+  }
+}
+
+.rights {
+  background: @gray-lighten;
+
+  &-para {
+    margin: 0;
+    padding: 4px 0 0 0;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: @main-color;
+  }
+}

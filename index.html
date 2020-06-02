@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Simple layout</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/changeOpacity.js"></script>
+    <link rel="stylesheet" href="fontello-social-icons/css/fontello.css">
+    <title>Simple layout</title>
   </head>
   <body>
     <div class="container">
@@ -225,7 +225,34 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer id="target" class="main-footer">
+        <section class="contacts">
+          <span class="contacts-title">Contacts</span>
+          <form class="contacts-form" action="#"  >
+            <input class="contacts-form-text" type="text" placeholder="Your name:" required>
+            <input class="contacts-form-email" type="email" placeholder="Your email:" required>
+            <textarea class="contacts-form-message" name="name" rows="6" cols="67" placeholder="Your message:"></textarea>
+            <input class="contacts-form-submit-button" type="submit" value="Send">
+          </form>
+          <div class="contacts-wrp">
+            <span class="sprite sprite-skype_icon">here_your_login_skype</span>
+            <span class="sprite sprite-icq_icon">279679659</span>
+            <span class="sprite sprite-email_icon">psdhtmlcss@mail.ru</span>
+            <span class="sprite sprite-phone_icon">80&nbsp;00&nbsp;4568&nbsp;55&nbsp;55</span>
+            <div class="contacts-social">
+              <a href="#target" class="contacts-social-item"><i class="icon-twitter"></i></a>
+              <a href="#target" class="contacts-social-item"><i class="icon-facebook"></i></a>
+              <a href="#target" class="contacts-social-item"><i class="icon-linkedin"></i></a>
+              <a href="#target" class="contacts-social-item"><i class="icon-google"></i></a>
+              <a href="#target" class="contacts-social-item"><i class="icon-youtube"></i></a>
+            </div>
+          </div>
+        </section>
+        <section class="rights">
+          <p class="rights-para">Copyright © 2014 Product name · PSD HTML CSS</p>
+        </section>
+      </footer>
     </div>
+    <!-- <script src="https://kit.fontawesome.com/df6f02bd21.js" crossorigin="anonymous"></script> -->
   </body>
 </html>
